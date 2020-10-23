@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Dice Roller</title>
-	<link rel="style.css" href="/style.css"/>
-</head>
-<body>
-  <H2>Dice Roller</H2>
-	<body style="background-color: lightgreen">
-	       <label for="dice">Enter a number of Dice:</label>
-	       <input type="text" id="roll-namber" placeholder="roll dice" />
-	       <button id="roll-dice">Roll!</button>
-		   <div class="Total">Total:___</div>
-	<button id="show-all-rolls">Show All Rolls</button>
-	<button id="reset-button">Reset</button>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="style.css" href="/style.css"/>
+  </head>
+  <body>
+    <H2>Dice Roller</H2>
+    <body style="background-color:palegreen"> 
+          <label for="dice">Enter a number of Dice:</label>
+          <input type="number" id="roll-number" placeholder="roll dice" />
+          <button id="roll-dice">Roll!</button>
+          <div id="sum">Total:___</div>
+          
+    <button id="show-all-rolls">Show All Rolls</button>
+    <button id="reset-button">Reset</button>
     <div id="roll-results">
     </div>
 </button>
-<script src="main.js"></script>
+<script src="./main.js"></script>
   </body>
 </html>
+
