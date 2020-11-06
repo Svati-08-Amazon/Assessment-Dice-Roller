@@ -14,12 +14,16 @@ rollButton.addEventListener("click", function () {
   console.log(rollDiceInput.value);
   let maxRolls = Number(rollDiceInput.value);
   let count = 0;
+  let totalsum = 0;
   // rollDiceInput.value = "";
   while (count < maxRolls) {
-    allRolls.push(giveMeRandomNumber());
+    let x = giveMeRandomNumber();
+    allRolls.push(x);
+    totalsum += x;
     count++;
   }
-  console.log(allRolls.reduce((a, b) => a + b, 0));
+  total.innerHTML = totalsum;
+  // console.log(allRolls.reduce((a, b) => a + b, 0));
   console.log(allRolls);
 });
 
